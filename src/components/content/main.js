@@ -1,9 +1,7 @@
 import React from 'react';
-import { css } from '@emotion/react';
 import styled from '@emotion/styled';
 import Image from 'gatsby-image';
 import useMainBanner from '../../hooks/useBanner';
-import convertHexToRGBA from '../../helpers/hexToRgba';
 
 const Hero = styled.div`
     position: relative;
@@ -29,22 +27,6 @@ const HomePhoto = styled.div`
     -webkit-box-shadow: 0 0 25px 0 rgb(0 0 0 / 10%);
     -moz-box-shadow: 0 0 25px 0 rgba(0,0,0,.1);
     box-shadow: 0 0 25px 0 rgb(0 0 0 / 10%);
-`;
-
-const BgBlock = styled.span`
-    position: absolute;
-    left: -10vw;
-    top: 22.5rem;
-    right: auto;
-    bottom: auto;
-    z-index: -1;
-    width: 60%;
-    height: 30rem;
-    max-height: 100%;
-    min-width: 400px;
-    border-top-right-radius: 55px;
-    border-bottom-right-radius: 55px;
-    background-color: ${ props => props.color };
 `;
 
 const Header = styled.h1`
@@ -89,11 +71,10 @@ const Description = styled.div`
 const MainContent = () => {
 
     const { header, description, thumbnail, download, link, primarycolor, secondarycolor } = useMainBanner();
-    const rgba = convertHexToRGBA(secondarycolor.hex, 0.1, 1);
+        // const rgba = convertHexToRGBA(secondarycolor.hex, 0.1, 1);
 
     return (
         <Hero>
-            {/* <BgBlock color={rgba} /> */}
             <div>
                 <Header pColor={primarycolor} sColor={secondarycolor}
                 dangerouslySetInnerHTML={{ __html: header }}></Header>
@@ -104,8 +85,7 @@ const MainContent = () => {
             </div>
             <div>
                 <HomePhoto>
-                    <Image 
-                    fluid={thumbnail.fluid} />
+                    <Image fluid={thumbnail.fluid} />
                 </HomePhoto>
             </div>
         </Hero>

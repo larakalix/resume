@@ -21,7 +21,7 @@ const Content = styled.div`
     }
 `;
 
-const SkillContent = styled.p`
+const SkillContent = styled.div`
     margin-bottom: 10px;
     color: #55527c;
     font-size: 18px;
@@ -30,11 +30,12 @@ const SkillContent = styled.p`
     letter-spacing: -0.01em;
 `;
 
-const Skill = ({ title, tech }) => {
+const Skill = ({ title, description }) => {
+    console.log('description', description)
     return (
         <Content>
             <h1>{title}</h1>
-            <p dangerouslySetInnerHTML={{ __html: tech }}></p>
+            <SkillContent dangerouslySetInnerHTML={{ __html: description }}></SkillContent>
         </Content>
     )
 }

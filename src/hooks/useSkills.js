@@ -7,7 +7,7 @@ const UseSkills = () => {
           nodes {
             percentage
             title
-            tech
+            description
             id
           }
         }

@@ -34,6 +34,8 @@ const Skills = () => {
 
     const skills = UseSkills();
 
+    console.log('skills', skills)
+
     return (
         <Content>
             <h5 css={css`
@@ -44,11 +46,11 @@ const Skills = () => {
             <Header>Skills</Header>
 
         <SkillList>
-          {skills.map(sk => (
+          {skills.map(skill => (
               <Skill 
-                key={sk.id}
-                title={sk.title}
-                tech={sk.tech}
+                key={skill.id}
+                title={skill.title}
+                description={skill.description}
               />
           ))}
         </SkillList>
