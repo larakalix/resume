@@ -19,6 +19,20 @@ const Content = styled.div`
     }
 `;
 
+const HomePhoto = styled.div`
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-bottom: calc(100% - 36px);
+    background-color: #fff;
+    border-radius: 1000px;
+    border: 18px solid #fff;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 25px 0 rgb(0 0 0 / 10%);
+    -moz-box-shadow: 0 0 25px 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 25px 0 rgb(0 0 0 / 10%);
+`;
+
 const BgBlock = styled.span`
     position: absolute;
     left: -10vw;
@@ -93,15 +107,18 @@ const MainContent = () => {
                 }
             </div>
             <div>
-                <Image css={css`
-                    max-width: 350px;
-                    margin: auto;
-                    border-radius: 50%;
-                 `}
-                 fluid={thumbnail.fluid} />
+                <HomePhoto>
+                    <Image css={css`
+                        max-width: 350px;
+                        margin: auto;
+                        border-radius: 50%;
+                    `}
+                    fluid={thumbnail.fluid} />
+                </HomePhoto>
             </div>
         </Content>
     )
 }
 
 export default MainContent
+// https://lmpixels.com/wp/leven-wp/full-width/
