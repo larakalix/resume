@@ -19,15 +19,15 @@ const Content = styled.div`
         font-weight: 600;
         letter-spacing: -0.03em;
     }
+`;
 
-    p {
-        margin-bottom: 10px;
-        color: #55527c;
-        font-size: 18px;
-        line-height: 1.6;
-        font-weight: 400;
-        letter-spacing: -0.01em;
-    }
+const SkillContent = styled.p`
+    margin-bottom: 10px;
+    color: #55527c;
+    font-size: 18px;
+    line-height: 1.6;
+    font-weight: 400;
+    letter-spacing: -0.01em;
 `;
 
 const Skill = ({ title, tech }) => {
