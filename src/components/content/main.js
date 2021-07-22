@@ -90,7 +90,6 @@ const MainContent = () => {
 
     const { header, description, thumbnail, download, link, primarycolor, secondarycolor } = useMainBanner();
     const rgba = convertHexToRGBA(secondarycolor.hex, 0.1, 1);
-    console.log('rgba', rgba);
 
     return (
         <Hero>
