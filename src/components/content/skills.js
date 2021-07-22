@@ -6,13 +6,10 @@ import UseSkills from '../../hooks/useSkills';
 
 const Content = styled.div`
     padding: 10vh 0;
-    max-width: 70vw;
     margin: 0 auto;
 `;
 
 const SkillList = styled.div`
-    max-width: 70vw;
-    width: 95%;
     margin: 4rem auto 0 auto;
 
     @media (min-width: 768px) {
@@ -43,7 +40,7 @@ const Skills = () => {
               text-align: center;
               margin: 0;
             `}>
-                These are</h5>
+                These are my</h5>
             <Header>Skills</Header>
 
         <SkillList>

@@ -5,16 +5,14 @@ import Image from 'gatsby-image';
 import useMainBanner from '../../hooks/useBanner';
 import convertHexToRGBA from '../../helpers/hexToRgba';
 
-const Content = styled.div`
+const Hero = styled.div`
     position: relative;
     padding: 10vh 0;
-    max-width: 80vw;
-    width: 95%;
     margin: 0 auto;
 
     @media (min-width: 768px) {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 2fr 1fr;
         column-gap: 3rem;
     }
 `;
@@ -23,9 +21,9 @@ const HomePhoto = styled.div`
     display: block;
     position: relative;
     width: 100%;
-    padding-bottom: calc(100% - 36px);
     background-color: #fff;
-    border-radius: 1000px;
+    border-radius: 50%;
+    max-height: 40rem;
     border: 18px solid #fff;
     overflow: hidden;
     -webkit-box-shadow: 0 0 25px 0 rgb(0 0 0 / 10%);
@@ -78,7 +76,7 @@ const Button = styled.a`
     font-weight: bold;
 `;
 
-const Description = styled.p`
+const Description = styled.div`
     color: #55527c;
     font-size: 1.8rem;
     max-width: 85%;
@@ -95,28 +93,23 @@ const MainContent = () => {
     console.log('rgba', rgba);
 
     return (
-        <Content>
-            <BgBlock color={rgba} />
+        <Hero>
+            {/* <BgBlock color={rgba} /> */}
             <div>
                 <Header pColor={primarycolor} sColor={secondarycolor}
                 dangerouslySetInnerHTML={{ __html: header }}></Header>
                 <Description dangerouslySetInnerHTML={{ __html: description }}></Description>
                 {
-                    download ? ( <Button pColor={primarycolor} href={link} download>Download</Button> )
-                    : null
+                    download ? ( <Button pColor={primarycolor} href={link} download>Download</Button> ) : null
                 }
             </div>
             <div>
                 <HomePhoto>
-                    <Image css={css`
-                        max-width: 350px;
-                        margin: auto;
-                        border-radius: 50%;
-                    `}
+                    <Image 
                     fluid={thumbnail.fluid} />
                 </HomePhoto>
             </div>
-        </Content>
+        </Hero>
     )
 }
 

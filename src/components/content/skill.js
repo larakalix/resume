@@ -34,7 +34,7 @@ const Skill = ({ title, tech }) => {
     return (
         <Content>
             <h1>{title}</h1>
-            <p>{tech}</p>
+            <p dangerouslySetInnerHTML={{ __html: tech }}></p>
         </Content>
     )
 }

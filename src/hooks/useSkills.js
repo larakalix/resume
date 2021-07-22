@@ -3,8 +3,9 @@ import { graphql, useStaticQuery} from 'gatsby';
 const UseSkills = () => {
 
     const data = useStaticQuery(graphql`query {
-        allDatoCmsSkill {
+      allDatoCmsSkill(sort: {fields: percentage, order: ASC}) {
           nodes {
+            percentage
             title
             tech
             id
