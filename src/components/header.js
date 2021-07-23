@@ -19,7 +19,7 @@ const Content = styled.ul`
 `;
 
 const LogoBox = styled.div`
-    background-color: white;
+    background-color: transparent;
     padding: 0.4rem;
     border-radius: 0.25rem;
 `;
