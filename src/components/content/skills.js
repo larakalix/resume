@@ -5,8 +5,12 @@ import Skill from '../content/skill';
 import UseSkills from '../../hooks/useSkills';
 
 const Content = styled.div`
-    padding: 10vh 0;
+    padding: 7rem 0;
     margin: 0 auto;
+
+    @media (max-width: 768px) {
+        padding: 3rem 0;
+    }
 `;
 
 const SkillList = styled.div`
@@ -48,6 +52,7 @@ const Skills = () => {
                 key={skill.id}
                 title={skill.title}
                 description={skill.description}
+                icon={skill.icon}
               />
           ))}
         </SkillList>

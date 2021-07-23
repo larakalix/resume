@@ -9,6 +9,11 @@ const UseSkills = () => {
             title
             description
             id
+            icon {
+              fluid( maxWidth: 350 ) {
+               ...GatsbyDatoCmsFluid
+              }
+            }
           }
         }
       }`);

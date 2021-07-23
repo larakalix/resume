@@ -27,7 +27,9 @@ const Header = () => {
                 padding: 1rem;
             `}>
             <Content>
-                <li>{title}</li>
+                <li css={css`
+                    opacity: 0;
+                `}>{title}</li>
                 <li>
                     <Image css={css`
                         max-width: 100px;
