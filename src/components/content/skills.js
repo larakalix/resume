@@ -14,7 +14,7 @@ const SkillList = styled.div`
 
     @media (min-width: 768px) {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         column-gap: 3rem
     }
 `;
