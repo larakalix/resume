@@ -25,7 +25,7 @@ const Hero = styled.div`
 const Box = styled.div`
     order: 1;
 
-    @media (max-width: 768px) {
+    @media (max-width: 576px) {
         order: ${props => props.mobileOrder ? 1 : 2};
     }
 `;
@@ -45,7 +45,7 @@ const HomePhoto = styled.div`
 
     @media (max-width: 768px) {
         margin-top: 6rem;
-        max-height: 30rem;
+        max-height: 65vh;
     }
 `;
 

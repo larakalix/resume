@@ -12,6 +12,7 @@ const Content = styled.ul`
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    z-index: -1;
 
     li {
         padding: 1rem;
