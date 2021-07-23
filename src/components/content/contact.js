@@ -33,13 +33,11 @@ const Email = styled.a`
     text-decoration: none;
 `;
 
-const ContactMe = () => {
-    return (
-        <Content>
-            <h1>Got a Project? Lets Talk!</h1>
-            <Email href="mailto:uki@live.co.uk">uki@live.co.uk</Email>
-        </Content>
-    )
-}
+const ContactMe = () => (
+    <Content>
+        <h1>Got a Project? Lets Talk!</h1>
+        <Email href="mailto:uki@live.co.uk">uki@live.co.uk</Email>
+    </Content>
+);
 
 export default ContactMe

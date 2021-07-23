@@ -31,10 +31,7 @@ const Header = styled.h1`
 `;
 
 const Skills = () => {
-
     const skills = UseSkills();
-
-    console.log('skills', skills)
 
     return (
         <Content>

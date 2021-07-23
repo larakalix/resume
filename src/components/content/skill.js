@@ -30,14 +30,11 @@ const SkillContent = styled.div`
     letter-spacing: -0.01em;
 `;
 
-const Skill = ({ title, description }) => {
-    console.log('description', description)
-    return (
-        <Content>
-            <h1>{title}</h1>
-            <SkillContent dangerouslySetInnerHTML={{ __html: description }}></SkillContent>
-        </Content>
-    )
-}
+const Skill = ({ title, description }) => (
+    <Content>
+        <h1>{title}</h1>
+        <SkillContent dangerouslySetInnerHTML={{ __html: description }}></SkillContent>
+    </Content>
+);
 
 export default Skill
