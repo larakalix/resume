@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import { StaticImage } from "gatsby-plugin-image";
 
 const Content = styled.div`
-    padding: 10rem 0;
+    padding: 25vh 0;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -22,10 +22,6 @@ const Content = styled.div`
         font-weight: 700;
         letter-spacing: -0.04em;
     }
-
-    @media (max-width: 768px) {
-        padding: 5rem 0;
-    }
 `;
 
 const Email = styled.a`
@@ -39,6 +35,12 @@ const Email = styled.a`
     text-decoration: none;
 `;
 
+const Title = styled.h1`
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+`;
+
 const ContactMe = () => (
     <Content>
         <StaticImage
@@ -47,7 +49,7 @@ const ContactMe = () => (
                 margin-bottom: 3rem;
             `}
             src='./../../../assets/result.svg' alt="Inbox" />
-        <h1>Got a Project? Lets Talk!</h1>
+        <Title>Got a Project? Lets Talk!</Title>
         <Email href="mailto:uki@live.co.uk">uki@live.co.uk</Email>
     </Content>
 );
