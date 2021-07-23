@@ -15,23 +15,9 @@ const Content = styled.div`
 `;
 
 const Email = styled.a`
-    margin-top: 0px;
-    margin-bottom: 0px;
-    color: white;
-    font-size: 28px;
-    line-height: 1;
-    font-weight: 700;
-    letter-spacing: -0.03em;
-    text-decoration: none;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
     padding: 1.5rem 3rem;
-    border-radius: 0.25rem;
-    transition: all 0.5s 0s ease;
-
-    &:hover {
-        background: white;
-        color: #130f49;
-        padding: 1.5rem 5rem;
-    }
 `;
 
 const Title = styled.h1`
@@ -50,14 +36,15 @@ const Title = styled.h1`
 
 const ContactMe = () => (
     <Content>
-        <StaticImage
-            css={css`
-                max-width: 6rem;
-                margin-bottom: 3rem;
-            `}
-            src='./../../../assets/result.svg' alt="Inbox" />
-        <Title>Got a Project? Lets Talk!</Title>
-        <Email href="mailto:uki@live.co.uk">uki@live.co.uk</Email>
+        <Title>Got a Project? Let's Talk!</Title>
+        <Email href="mailto:uki@live.co.uk">
+            <StaticImage
+                css={css`
+                    max-width: 6rem;
+                    margin-bottom: 3rem;
+                `}
+                src='./../../../assets/result.svg' alt="Inbox" />
+        </Email>
     </Content>
 );
 

@@ -62,6 +62,8 @@ const Header = styled.h1`
 
     @media (max-width: 768px) {
         font-size: 3.5rem;
+        margin-top: 2.5rem;
+        text-align: center;
     }
 `;
 
@@ -78,7 +80,6 @@ const Button = styled.a`
     font-size: 1.2rem;
     line-height: 1rem;
     margin-top: 1rem;
-    display: inline-block;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -87,6 +88,7 @@ const Button = styled.a`
     @media (max-width: 768px) {
         max-width: 100%;
         margin: 1.2rem auto;
+        justify-content: center;
     }
 `;
 
@@ -103,6 +105,7 @@ const Description = styled.div`
     @media (max-width: 768px) {
         max-width: 100%;
         font-size: 1.6rem;
+        text-align: justify;
     }
 `;
 

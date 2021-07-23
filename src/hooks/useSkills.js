@@ -10,7 +10,7 @@ const UseSkills = () => {
             description
             id
             icon {
-              fluid( maxWidth: 350 ) {
+              fluid( maxWidth: 256 ) {
                ...GatsbyDatoCmsFluid
               }
             }

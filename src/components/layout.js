@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import useSeo from '../hooks/useSeo';
+import "normalize.css";
 
 const Layout = (props) => {
 
@@ -52,7 +53,6 @@ const Layout = (props) => {
             <Helmet>
                 <title>{ siteName }</title>
                 <meta name="description" content={description} />
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />

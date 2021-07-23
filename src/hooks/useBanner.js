@@ -16,7 +16,7 @@ const useMainBanner = () => {
                hex
              }
              thumbnail {
-               fluid( maxWidth: 350 ) {
+               fluid( maxWidth: 256 ) {
                 ...GatsbyDatoCmsFluid
                }
              }
