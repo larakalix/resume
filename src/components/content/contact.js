@@ -12,16 +12,6 @@ const Content = styled.div`
     align-items: center;
     border-radius: 0.25rem;
     background-color: #34a1cd;
-
-    h1 {
-        margin-top: 0px;
-        margin-bottom: 16px;
-        color: white;
-        font-size: 38px;
-        line-height: 1.1;
-        font-weight: 700;
-        letter-spacing: -0.04em;
-    }
 `;
 
 const Email = styled.a`
@@ -33,9 +23,26 @@ const Email = styled.a`
     font-weight: 700;
     letter-spacing: -0.03em;
     text-decoration: none;
+    padding: 1.5rem 3rem;
+    border-radius: 0.25rem;
+    transition: all 0.5s 0s ease;
+
+    &:hover {
+        background: white;
+        color: #130f49;
+        padding: 1.5rem 5rem;
+    }
 `;
 
 const Title = styled.h1`
+    margin-top: 0;
+    margin-bottom: 4rem;
+    color: white;
+    font-size: 3.6rem;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+
     @media (max-width: 768px) {
         text-align: center;
     }

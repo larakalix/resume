@@ -20,6 +20,7 @@ const Content = styled.div`
         line-height: 1.2;
         font-weight: 600;
         letter-spacing: -0.03em;
+        margin-top: 1.4rem;
     }
 
     @media (max-width: 768px) {

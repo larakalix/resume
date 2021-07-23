@@ -18,6 +18,12 @@ const Content = styled.ul`
     }
 `;
 
+const LogoBox = styled.div`
+    background-color: white;
+    padding: 0.4rem;
+    border-radius: 0.25rem;
+`;
+
 const Header = () => {
 
     const { title, logo } = useHeader();
@@ -31,11 +37,13 @@ const Header = () => {
                     opacity: 0;
                 `}>{title}</li>
                 <li>
-                    <Image css={css`
-                        max-width: 100px;
-                        margin-left: auto;
-                    `}
-                    fluid={logo.fluid} />
+                    <LogoBox>
+                        <Image css={css`
+                            max-width: 100px;
+                            margin-left: auto;
+                        `}
+                        fluid={logo.fluid} />
+                    </LogoBox>
                 </li>
             </Content>
         </header>
