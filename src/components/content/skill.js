@@ -45,9 +45,12 @@ const Skill = ({ title, description, icon }) => {
     console.log(icon)
     return (
         <Content>
-            <Icon>
-                <Image fluid={icon.fluid} />
-            </Icon>
+            { icon?.fluid 
+                ? <Icon>
+                    <Image fluid={icon.fluid} />
+                </Icon> 
+                : null
+            }
             <h1>{title}</h1>
             <SkillContent dangerouslySetInnerHTML={{ __html: description }}></SkillContent>
         </Content>
