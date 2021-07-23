@@ -42,6 +42,7 @@ const Skills = () => {
             <h5 css={css`
               text-align: center;
               margin: 0;
+              font-size: 1.8rem;
             `}>
                 These are my</h5>
             <Header>Skills</Header>

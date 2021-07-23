@@ -97,6 +97,7 @@ const Description = styled.div`
     line-height: 1.7;
     font-weight: 400;
     letter-spacing: -0.01em;
+    margin-top: 1.4rem;
     margin-bottom: 2.8rem;
 
     @media (max-width: 768px) {
