@@ -47,6 +47,10 @@ const HomePhoto = styled.div`
         margin-top: 6rem;
         max-height: 65vh;
     }
+
+    @media (min-width: 768px) {
+        max-height: 45rem;
+    }
 `;
 
 const Header = styled.h1`
@@ -112,7 +116,6 @@ const Description = styled.div`
 const MainContent = () => {
 
     const { header, description, thumbnail, download, link, primarycolor, secondarycolor } = useMainBanner();
-        // const rgba = convertHexToRGBA(secondarycolor.hex, 0.1, 1);
 
     return (
         <Hero>
@@ -140,4 +143,3 @@ const MainContent = () => {
 }
 
 export default MainContent
-// https://lmpixels.com/wp/leven-wp/full-width/
