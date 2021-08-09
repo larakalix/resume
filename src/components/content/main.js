@@ -7,7 +7,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const Hero = styled.div`
     position: relative;
-    padding: 7rem 0;
+    padding: 13rem 0 7rem 0;
     margin: 0 auto;
 
     @media (min-width: 768px) {
