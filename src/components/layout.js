@@ -50,9 +50,21 @@ const Layout = (props) => {
                     }
                 `}
             />
-            <Helmet>
+            <Helmet
+                meta={
+                    [
+                        {
+                            name: `description`,
+                            content: description,
+                        },
+                        {
+                            name: "keywords",
+                            content: `Ivan, Lara, Developer, Dev, FrontEnd, BackEnd, Antonio, Kalix, Calix, Kalix.TheMan, uki, ukikalix, reactjs, angular, netcore, ${description}`,
+                        },
+                    ]
+                }
+            >
                 <title>{ siteName }</title>
-                <meta name="description" content={description} />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
