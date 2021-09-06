@@ -38,7 +38,7 @@ const Layout = (props) => {
                         font-family: 'Space Grotesk', sans-serif;
                     }
 
-                    h4, h5, h6, p {
+                    h4, h5, h6, p, li {
                         font-family: 'Karla', sans-serif;
                     }
 
