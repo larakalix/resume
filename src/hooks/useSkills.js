@@ -1,6 +1,6 @@
 import { graphql, useStaticQuery} from 'gatsby';
 
-const UseSkills = () => {
+const useSkills = () => {
 
     const data = useStaticQuery(graphql`query {
       allDatoCmsSkill(
@@ -24,4 +24,4 @@ const UseSkills = () => {
     return data.allDatoCmsSkill.nodes;
 }
 
-export default UseSkills
+export default useSkills

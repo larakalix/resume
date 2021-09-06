@@ -115,7 +115,9 @@ const Description = styled.div`
 
 const MainContent = () => {
 
-    const { header, description, thumbnail, download, link, primarycolor, secondarycolor } = useMainBanner();
+    const { header, description, thumbnail, download, document, primarycolor, secondarycolor } = useMainBanner();
+
+    const cv = `https://www.datocms-assets.com${document.path}`;
 
     return (
         <Hero>
@@ -123,7 +125,7 @@ const MainContent = () => {
                 <Header pColor={primarycolor} sColor={secondarycolor} dangerouslySetInnerHTML={{ __html: header }}></Header>
                 <Description dangerouslySetInnerHTML={{ __html: description }}></Description>
                 {
-                    download ? ( <Button pColor={primarycolor} href={link} target="_blank" download>
+                    download ? ( <Button pColor={primarycolor} href={cv} target="_blank" download>
                         <StaticImage
                             css={css`
                                 max-width: 2rem;

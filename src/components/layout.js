@@ -4,7 +4,6 @@ import Helmet from 'react-helmet';
 import Header from '../components/header';
 import Footer from '../components/footer';
 import useSeo from '../hooks/useSeo';
-import "normalize.css";
 
 const Layout = (props) => {
 

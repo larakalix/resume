@@ -1,63 +1,27 @@
 import React from 'react';
-import { css } from '@emotion/react';
-import styled from '@emotion/styled';
+import useSkills from '../../hooks/useSkills';
 import Skill from '../content/skill';
-import UseSkills from '../../hooks/useSkills';
-
-const Content = styled.div`
-    padding: 7rem 0;
-    margin: 0 auto;
-
-    @media (max-width: 768px) {
-        padding: 3rem 0;
-    }
-`;
-
-const SkillList = styled.div`
-    margin: 4rem auto 0 auto;
-
-    @media (min-width: 768px) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        column-gap: 3rem
-    }
-`;
-
-const Header = styled.h1`
-    margin-top: 0px;
-    margin-bottom: 3rem;
-    color: #130f49;
-    font-size: 64px;
-    line-height: 1;
-    font-weight: 700;
-    letter-spacing: -0.04em;
-    text-align: center;
-`;
+import { GridList, Content, Header, LittleHeader } from '../styles/common-styles';
 
 const Skills = () => {
-    const skills = UseSkills();
+
+    const skills = useSkills();
 
     return (
         <Content>
-            <h5 css={css`
-              text-align: center;
-              margin: 0;
-              font-size: 1.8rem;
-              text-transform: uppercase;
-            `}>
-                These are my</h5>
+            <LittleHeader>These are my</LittleHeader>
             <Header>Skills</Header>
 
-        <SkillList>
-          {skills.map(skill => (
-              <Skill 
-                key={skill.id}
-                title={skill.title}
-                description={skill.description}
-                icon={skill.icon}
-              />
-          ))}
-        </SkillList>
+            <GridList>
+                {skills.map(skill => (
+                    <Skill 
+                        key={skill.id}
+                        title={skill.title}
+                        description={skill.description}
+                        icon={skill.icon}
+                    />
+                ))}
+            </GridList>
 
         </Content>
     )

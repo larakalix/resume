@@ -3,6 +3,7 @@ import styled from '@emotion/styled';
 import Layout from '../components/layout';
 import MainContent from '../components/content/main';
 import Skills from '../components/content/skills';
+import Expertise from '../components/content/expertise';
 import ContactMe from '../components/content/contact';
 
 const MainBox = styled.div`
@@ -16,6 +17,7 @@ const IndexPage = () => {
       <MainBox>
         <MainContent />
         <Skills />
+        <Expertise />
         <ContactMe />
       </MainBox>
     </Layout>
