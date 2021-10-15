@@ -4,7 +4,6 @@ const useExpertise = () => {
     
     const data = useStaticQuery(graphql`query {
         allDatoCmsExpertise(
-          sort: {fields: order: ASC}
           filter: {locale: {eq: "en"}}) {
           nodes {
             id

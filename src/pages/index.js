@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import MainContent from '../components/content/main';
 import Skills from '../components/content/skills';
 import Expertise from '../components/content/expertise';
+import Projects from '../components/content/projects';
 import ContactMe from '../components/content/contact';
 
 const MainBox = styled.div`
@@ -18,6 +19,7 @@ const IndexPage = () => {
         <MainContent />
         <Skills />
         <Expertise />
+        <Projects />
         <ContactMe />
       </MainBox>
     </Layout>

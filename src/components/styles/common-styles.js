@@ -72,3 +72,19 @@ export const SingleContentDescription = styled.div`
     letter-spacing: -0.05em;
     text-align: justify;
 `;
+
+export const GreenButton = styled.a`
+    background-color: #34d399;
+    color: white;
+    padding: 1.2rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+`;
+
+export const PreviewBox = styled.div`
+    max-width: 30rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    border-radius: 0.25rem;
+    overflow: hidden;
+`;
