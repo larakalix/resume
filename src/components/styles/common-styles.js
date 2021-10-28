@@ -87,4 +87,5 @@ export const PreviewBox = styled.div`
     margin-top: 1rem;
     border-radius: 0.25rem;
     overflow: hidden;
+    max-height: 20rem;
 `;
